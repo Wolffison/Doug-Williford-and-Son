@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Request - Doug Williford & Son</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Doug Williford & Son</h1>
+            <p>Heating, Air Conditioning, and Generators</p>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ac_heating.html">AC/Heating</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li class="dropdown">
+                    <a href="our_team.html" class="dropbtn">Our Team</a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                </li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="financing.html">Financing</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <main>
+        <section class="service-request">
+            <div class="container">
+                <h2>Service Request Form</h2>
+                <form id="service-request-form" action="http://localhost:3000/submit" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="service">Service Required:</label>
+                    <select id="service" name="service" required>
+                        <option value="heating">Heating</option>
+                        <option value="cooling">Cooling</option>
+                        <option value="generator">Generator</option>
+                    </select>
+
+                    <label for="message">Additional Information:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Doug Williford & Son. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

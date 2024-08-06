@@ -1,0 +1,518 @@
+
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1, header p {
+    margin: 0;
+    color: #e60000;
+}
+
+nav {
+    background-color: #444;
+    overflow: hidden;
+    animation: slideIn 1s ease-in-out;
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #e60000;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+    animation: zoomIn 2s ease-in-out;
+}
+
+.hero .btn {
+    background-color: #e60000;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hero .btn:hover {
+    background-color: #ff1a1a;
+    transition: background-color 0.3s;
+}
+
+.about {
+    background-color: #222;
+    padding: 40px 0;
+    border-top: 5px solid #e60000;
+    border-bottom: 5px solid #e60000;
+}
+
+.about h2, .about p {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about .content p {
+    flex: 1 1 45%;
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+.testimonials {
+    background-color: #222;
+    padding: 40px 0;
+    border-top: 5px solid #e60000;
+    border-bottom: 5px solid #e60000;
+}
+
+.testimonials h2, .testimonials p {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.testimonial-bubble {
+    background-color: #333;
+    border: 2px solid #e60000;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.testimonial-bubble::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color: #333;
+    clear: both;
+}
+
+.service-request {
+    background-color: #222;
+    padding: 40px 0;
+    border-top: 5px solid #e60000;
+    border-bottom: 5px solid #e60000;
+}
+
+.service-request h2, .service-request p {
+    animation: fadeIn 1s ease-in-out;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form select, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    background-color: #e60000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff1a1a;
+    transition: background-color 0.3s;
+}
+
+.contact {
+    background-color: #222;
+    padding: 40px 0;
+    border-top: 5px solid #e60000;
+    border-bottom: 5px solid #e60000;
+}
+
+.contact h2, .contact p {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .about .content {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+.contact-form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-form h3 {
+    margin-top: 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    background-color: #e60000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ff1a1a;
+    transition: background-color 0.3s;
+}
+
+.map-container {
+    margin-top: 40px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.map-container h3 {
+    margin-top: 0;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.ac-heating, .generator {
+    background-color: #222;
+    padding: 40px 0;
+    border-top: 5px solid #e60000;
+    border-bottom: 5px solid #e60000;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.ac-heating h2, .ac-heating p, .generator h2, .generator p {
+    animation: fadeIn 1s ease-in-out;
+    color: #fff;
+}
+
+.financing, .gallery, .our-team {
+    background-color: #222;
+    padding: 40px 0;
+    border-top: 5px solid #e60000;
+    border-bottom: 5px solid #e60000;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.financing h2, .financing p, .gallery h2, .gallery .gallery-placeholder, .our-team h2, .our-team .team-placeholder {
+    animation: fadeIn 1s ease-in-out;
+    color: #fff;
+}
+
+.gallery-placeholder, .team-placeholder {
+    background-color: #333;
+    border: 2px solid #e60000;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.gallery-placeholder p, .team-placeholder p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #e60000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover a {
+    background-color: #444;
+}
+
+/* Creative container for About section */
+.about-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-container h2, .about-container p {
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-container .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-container .content p {
+    flex: 1 1 45%;
+    margin: 0;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #e60000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #e60000;
+    transition: background-color 0.3s;
+}
+
+/* Creative container for About section */
+.about-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-container h2, .about-container p {
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-container .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-container .content p {
+    flex: 1 1 45%;
+    margin: 0;
+}
+
+/* Team Photo Styles */
+.team-photo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.team-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+    animation: zoomIn 2s ease-in-out;
+}

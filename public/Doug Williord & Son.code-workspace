@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../myformapp/myformapp"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Doug Williford & Son"
+	}
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Doug Williford & Son</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Doug Williford & Son</h1>
+            <p>Heating, Air Conditioning, and Generators</p>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ac_heating.html">AC/Heating</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li class="dropdown">
+                    <a href="our_team.html" class="dropbtn">Our Team</a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                </li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="financing.html">Financing</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <main>
+        <section class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Address & Phone:</p>
+                <p>Doug Williford & Son<br>
+                727 N. Fletcher St<br>
+                Jasper, TX 75951<br>
+                (409) 384-5458<br>
+                (800) 640-2981 - toll-free<br>
+                (409) 384-7621 - fax</p>
+                <p>Doug Williford & Son now offers financing through Synchrony Bank for all your cooling, heating, or generator needs. Call today & ask about current promotions and select the special financing that meets your needs.</p>
+                
+                <div class="contact-form">
+                    <h3>Quick Contact Form</h3>
+                    <form id="quick-contact-form" action="http://localhost:3000/submit" method="post">
+                        <label for="contact-name">Name:</label>
+                        <input type="text" id="contact-name" name="contact-name" required>
+
+                        <label for="contact-email">Email:</label>
+                        <input type="email" id="contact-email" name="contact-email" required>
+
+                        <label for="contact-message">Message:</label>
+                        <textarea id="contact-message" name="contact-message" rows="4" required></textarea>
+
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+
+                <div class="map-container">
+                    <h3>Our Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.1699819081857!2d-94.00538748461641!3d30.920251481567857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x863c6656aeb926b1%3A0x2a4a97d6351f14b7!2s727%20N%20Fletcher%20St%2C%20Jasper%2C%20TX%2075951%2C%20USA!5e0!3m2!1sen!2sus!4v1625771177981!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Doug Williford & Son. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
